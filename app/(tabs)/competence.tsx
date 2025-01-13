@@ -18,28 +18,22 @@ export default function TabTwoScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Experience</ThemedText>
+        <ThemedText type="title">Compétences</ThemedText>
       </ThemedView>
-      <ThemedText>Voici mes différentes experience dans le milieu du travail</ThemedText>
-      <Collapsible title="Arrow IT">
+      <ThemedText>Voici mes différentes compétences</ThemedText>
+    <Collapsible title="Soif d'apprendre">
         <ThemedText>
-          J'ai réalisé un stage de 500h dans la société{' '}
-          <ThemedText type="defaultSemiBold">Arrow IT</ThemedText>{' '}
-          en tant que développeur web et mobile.
+          Je suis une personne qui aime apprendre et développer ses compétences
+          par lui-même. Mais j'aime aussi pouvoir apprendre avec l'aide d'autre 
+          personne pour pouvoir échanger et apprendre de nouvelles choses.
         </ThemedText>
-        <ExternalLink href="https://arrow-it.be">
-          <ThemedText type="link">Leurs liens</ThemedText>
-        </ExternalLink>
       </Collapsible>
-      <Collapsible title="Fusalp">
+      <Collapsible title="Esprit d'équipe">
         <ThemedText>
-          J'ai travaillé dans les grands magasin Printemps Haussman pour la marque{' '}
-          <ThemedText type="defaultSemiBold">Fusalp</ThemedText> et j'ai appris à{' '}
-          <ThemedText type="defaultSemiBold">travailler en équipe</ThemedText>
+            Je suis quelqu'un qui préfère prendre du recule et observer avant d'agir, 
+            c'est pourquoi je suis quelqu'un qui aime travailler en équipe pour pouvoir
+            échanger et apprendre des autres.
         </ThemedText>
-        <ExternalLink href="https://www.google.com/maps/place/FUSALP+PRINTEMPS+HAUSSMANN/@48.8739752,2.3280554,17z/data=!3m2!4b1!5s0x47e66e316714bebb:0x5e2765571e1b0620!4m6!3m5!1s0x47e66f81429b9f79:0x6c54b85e85404700!8m2!3d48.8739752!4d2.3280554!16s%2Fg%2F11j8jy8qcn?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D">
-          <ThemedText type="link">Voir l'emplacement</ThemedText>
-        </ExternalLink>
       </Collapsible>
     </ParallaxScrollView>
   );
