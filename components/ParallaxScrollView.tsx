@@ -45,12 +45,14 @@ export default function ParallaxScrollView({
   });
 
   return (
-    <ThemedView style={styles.container}>
+    <ThemedView style={styles.container, {borderRadius:10}}>
       <Animated.ScrollView
+        style={{borderRadius: 10}}
         ref={scrollRef}
         scrollEventThrottle={16}
         scrollIndicatorInsets={{ bottom }}
-        contentContainerStyle={{ paddingBottom: bottom }}>
+        contentContainerStyle={{ paddingBottom: bottom }}
+        >
         <Animated.View
           style={[
             styles.header,
