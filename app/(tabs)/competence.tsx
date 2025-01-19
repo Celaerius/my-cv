@@ -36,6 +36,19 @@ export default function TabTwoScreen() {
             échanger et apprendre des autres.
         </ThemedText>
       </Collapsible>
+      <Collapsible title="Organisé">
+        <ThemedText>
+          Je suis quelqu'un qui est organisé dans son travail ce qui permet
+          de ne pas perdre de temps et de pouvoir travailler plus efficacement.
+        </ThemedText>
+      </Collapsible>
+      <Collapsible title="Autodidacte">
+        <ThemedText>
+          J'ai une très bonne capacité d'apprentissage ce qui me permet de m'adapté
+          à de nouvelles situations et de pouvoir apprendre de nouvelles choses rapidement
+          et efficacement.
+        </ThemedText>
+      </Collapsible>
     </ParallaxScrollView>
   );
 }
