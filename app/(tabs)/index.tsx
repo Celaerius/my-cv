@@ -11,6 +11,7 @@ export default function HomeScreen() {
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
+      BackgroundColor={{ light: 'white', dark: '#151718' }}
       headerImage={
         <Image
           source={require('@/assets/images/fond-test.jpeg')}

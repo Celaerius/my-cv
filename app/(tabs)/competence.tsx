@@ -11,6 +11,7 @@ export default function TabTwoScreen() {
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
+      BackgroundColor={{ light: 'white', dark: '#151718' }}
       headerImage={
         <Image
           source={require('@/assets/images/fond-competence.jpeg')}
