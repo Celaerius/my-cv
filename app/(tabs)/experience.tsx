@@ -11,18 +11,18 @@ import { View, ScrollView, Text} from 'react-native';
 export default function TabTwoScreen() {
   return (
     
-      <ThemedView style={styles.container}>
-      <ThemedView style={styles.titleContainer}>
+      <ThemedView BackgroundColor={{ light: '#F4ECFE', dark: '#160B1E' }} style={styles.container}>
+      <View style={styles.titleContainer}>
         <ThemedText type="title" style={{backgroundColor:'transparent'}}>Experience</ThemedText>
-      </ThemedView>
+      </View>
       <ThemedText style={{margin:5}}>Voici mes différentes experience dans le milieu du travail</ThemedText>
       <ScrollView horizontal showsVerticalScrollIndicator={false}  style={{width:"100%",}}>
       
-        <ThemedView style={styles.Card}>
+        <ThemedView BackgroundColor={{ light: '#E4D3EE', dark: '#160B1E' }}style={styles.Card}>
         <ParallaxScrollView
         
-      headerBackgroundColor={{ light: 'lightblue', dark: '#353636' }}
-      BackgroundColor={{ light: '#E9EEFD', dark: '#334949' }}
+      headerBackgroundColor={{ light: '#B2A4DF', dark: '#4D335B' }}
+      BackgroundColor={{ light: '#E4D3EE', dark: '#2C1D34' }}
       headerImage={
   
         <Image
@@ -47,11 +47,11 @@ export default function TabTwoScreen() {
           </ExternalLink>
           </ParallaxScrollView>
         </ThemedView>
-        <ThemedView style={styles.Card}>
+        <View style={styles.Card}>
         <ParallaxScrollView
         
-        headerBackgroundColor={{ light: 'lightblue', dark: '#353636' }}
-        BackgroundColor={{ light: '#E9EEFD', dark: '#334949' }}
+        headerBackgroundColor={{ light: '#B2A4DF', dark: '#4D335B' }}
+        BackgroundColor={{ light: '#E4D3EE', dark: '#2C1D34' }}
         headerImage={
           <Image
             source={require('@/assets/images/Logo_Fusalp.png')}
@@ -77,12 +77,12 @@ export default function TabTwoScreen() {
           </ExternalLink>
 
         </ParallaxScrollView>
-        </ThemedView>
-        <ThemedView style={styles.Card}>
+        </View>
+        <View style={styles.Card}>
         <ParallaxScrollView
         
-        headerBackgroundColor={{ light: 'lightblue', dark: '#353636' }}
-        BackgroundColor={{ light: '#E9EEFD', dark: '#334949' }}
+        headerBackgroundColor={{ light: '#B2A4DF', dark: '#4D335B' }}
+        BackgroundColor={{ light: '#E4D3EE', dark: '#2C1D34' }}
         headerImage={
           <Image
             source={require('@/assets/images/Logo_Ifapme.png')}
@@ -104,12 +104,12 @@ export default function TabTwoScreen() {
           </ExternalLink>
 
         </ParallaxScrollView>
-        </ThemedView>
-        <ThemedView style={styles.Card}>
+        </View>
+        <View style={styles.Card}>
         <ParallaxScrollView
         
-        headerBackgroundColor={{ light: 'lightblue', dark: '#353636' }}
-        BackgroundColor={{ light: '#E9EEFD', dark: '#334949' }}
+        headerBackgroundColor={{ light: '#B2A4DF', dark: '#4D335B' }}
+        BackgroundColor={{ light: '#E4D3EE', dark: '#2C1D34' }}
         headerImage={
           <Image
             source={require('@/assets/images/Logo_Colruyt.png')}
@@ -130,7 +130,7 @@ export default function TabTwoScreen() {
           </ExternalLink>
 
         </ParallaxScrollView>
-        </ThemedView>
+        </View>
       </ScrollView>
       
     </ThemedView>

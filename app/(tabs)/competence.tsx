@@ -6,21 +6,23 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { IconSymbol } from '@/components/ui/IconSymbol';
+import { View, ScrollView, Text} from 'react-native';
 
 export default function TabTwoScreen() {
   return (
+    <ThemedView BackgroundColor={{ light: '#F4ECFE', dark: '#160B1E' }} style={{ height: '100%' }}>
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
-      BackgroundColor={{ light: 'white', dark: '#151718' }}
+    headerBackgroundColor={{ light: '#A393BF', dark: '#4D485B' }}
+    BackgroundColor={{ light: '#F4ECFE', dark: '#160B1E' }}
       headerImage={
         <Image
-          source={require('@/assets/images/fond-competence.jpeg')}
+          source={require('@/assets/images/Logo_Fusalp.png')}
           style={styles.backImage}
         />
       }>
-      <ThemedView style={styles.titleContainer}>
+      <View style={styles.titleContainer}>
         <ThemedText type="title">Compétences</ThemedText>
-      </ThemedView>
+      </View>
       <ThemedText>Voici mes différentes compétences</ThemedText>
     <Collapsible title="Soif d'apprendre">
         <ThemedText>
@@ -50,6 +52,7 @@ export default function TabTwoScreen() {
         </ThemedText>
       </Collapsible>
     </ParallaxScrollView>
+    </ThemedView>
   );
 }
 
@@ -65,8 +68,8 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   backImage: {
-    height: 310,
-    width: 500,
+    height: 0,
+    width: 0,
     bottom: 0,
     left: 0,
     position: 'absolute',

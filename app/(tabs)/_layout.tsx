@@ -17,14 +17,20 @@ export default function TabLayout() {
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
         tabBarButton: HapticTab,
-        tabBarBackground: TabBarBackground,
         tabBarStyle: Platform.select({
           ios: {
-            // Use a transparent background on iOS to show the blur effect
-            position: 'absolute',
+            position: 'absolute', // Pour l'effet de flou ou un design flottant
+            backgroundColor: Colors[colorScheme ?? 'light'].background,
+            borderTopWidth: 0,
           },
-          default: {},
+          default: {
+            backgroundColor: Colors[colorScheme ?? 'light'].background, // Couleur sur Android et autres plateformes
+            borderTopWidth: 0,
+          },
         }),
+        
+        
+        
       }}>
       <Tabs.Screen
         name="index"
